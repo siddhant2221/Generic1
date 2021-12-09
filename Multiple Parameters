@@ -1,0 +1,20 @@
+class Abc<J,M>
+{
+    J num;
+    void Setter(J value, M ab){
+        num = value;
+    }
+    void Getter(){
+        System.out.println(num);
+    }
+}
+public class Generic {
+    public static void main(String[] args) {
+        Abc<Double,String>obj = new Abc<Double,String>();
+        Abc<Character,Integer>obj2 = new Abc<Character,Integer>();
+        obj.Setter(5.6,"abc");
+        obj2.Setter('A',56);
+        obj.Getter();
+        obj2.Getter();
+    }
+}
